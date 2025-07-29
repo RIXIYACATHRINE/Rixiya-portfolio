@@ -35,15 +35,14 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="p-10 text-center bg-gray-900">
+   <!-- REMOVE THIS DUPLICATE SECTION -->
+    <section id="about" class="p-10 text-center bg-gray-900 fade-in">
         <h2 class="text-4xl font-bold mb-6">About Me</h2>
         <p class="text-lg max-w-3xl mx-auto">
             I am a detail-oriented engineering student with a strong passion for <b>software development</b> and <b>problem-solving</b>.
-            Skilled in <b>C, C++, Java, Python, HTML, CSS</b>, and eager to apply my knowledge in <b>real-world projects</b>.
-            I am a proactive learner, committed to continuous growth and making a positive impact through <b>technology</b>.
         </p>
     </section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="p-6 text-center">
@@ -51,12 +50,13 @@
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div class="bg-white text-black p-6 rounded-lg shadow-lg">
                 <h3 class="text-2xl font-semibold mb-3">Technical Skills</h3>
-                <ul class="list-none space-y-2 text-lg">
-                    <li>✔ C & C++</li>
+                <ul>
                     <li>✔ Java</li>
-                    <li>✔ Python</li>
                     <li>✔ HTML & CSS</li>
-                    <li>✔ Microsoft Office</li>
+                    <li>✔ JavaScript</li>
+                    <li>✔ MySQL</li>
+                    <li>✔ JDBC & Hibernate</li>
+                    <li>✔ Git and GitHub</li>
                 </ul>
             </div>
             <div class="bg-white text-black p-6 rounded-lg shadow-lg">
@@ -72,34 +72,103 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="p-10 text-center bg-gray-900">
-        <h2 class="text-4xl font-bold mb-6">Projects</h2>
-        <div class="max-w-3xl mx-auto text-lg">
-            <p class="bg-white text-black p-4 rounded-lg shadow-lg mb-4">
-                📌 <b>Color Detector</b>- Built using Embedded C to detect and classify colors in real-time.
+<!-- Projects Section -->
+<section id="projects" class="p-10 text-center bg-gray-900">
+    <h2 class="text-4xl font-bold mb-10 text-white">Projects</h2>
+    <div class="grid gap-6 md:grid-cols-2 max-w-6xl mx-auto px-4">
+
+        <!-- Food App Project -->
+        <div class="bg-white text-black rounded-xl shadow-lg p-6 hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-semibold mb-2">BiteBuddy - Food App</h3>
+            <p class="text-base mb-4">
+                A dynamic food ordering web application built using Java, JSP, Servlets, and MySQL. Features include user registration, restaurant listing, menu display, cart, order history, and more.
             </p>
-            <p class="bg-white text-black p-4 rounded-lg shadow-lg mb-4">
-                📌 <b>Rice Quality Detection</b> - Implemented image processing techniques to determine rice quality.
+            <a href="https://github.com/RIXIYACATHRINE/BiteBuddy-FoodApp"
+                class="inline-block mt-2 text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition"
+                target="_blank">View Code</a>
+        </div>
+        
+
+        
+        <!-- Student Management System -->
+        <div class="bg-white text-black rounded-xl shadow-lg p-6 hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-semibold mb-2">Student Management System</h3>
+            <p class="text-base mb-4">Java-based CLI project using HashMap to manage student records efficiently with operations like add, update, delete, and view.</p>
+            <a href="https://github.com/RIXIYACATHRINE/Student-Registry-System" 
+               class="inline-block mt-2 text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition" 
+               target="_blank">View Code</a>
+        </div>
+
+        <!-- Online Quiz Project -->
+        <div class="bg-white text-black rounded-xl shadow-lg p-6 hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-semibold mb-2">Online Quiz System</h3>
+            <p class="text-base mb-4">
+                Java-based console application that allows users to take timed quizzes, view scores, and navigate through multiple-choice questions with ease.
+            </p>
+            <a href="https://github.com/RIXIYACATHRINE/Online-quiz"
+                class="inline-block mt-2 text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition"
+                target="_blank">View Code</a>
+        </div>
+
+
+        <!-- Movie Show Management System -->
+        <div class="bg-white text-black rounded-xl shadow-lg p-6 hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-semibold mb-2">Movie Show Management System</h3>
+            <p class="text-base mb-4">MySQL-based project with CRUD, indexing, and normalization to manage movie shows and ticket bookings efficiently.</p>
+            <a href="https://github.com/RIXIYACATHRINE/Sql-Project" 
+               class="inline-block mt-2 text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition" 
+               target="_blank">View Code</a>
+        </div>
+
+        <!-- Online Quiz Application -->
+    <div class="bg-white text-black rounded-xl shadow-lg p-6 hover:scale-105 transition duration-300">
+        <h3 class="text-2xl font-semibold mb-2">Online Quiz Application</h3>
+        <p class="text-base mb-4">
+            A standalone Java application that quizzes users with multiple-choice questions. Implements OOP concepts with a `Question` and `Quiz` class, supports user input, real-time feedback, and auto score calculation.
+        </p>
+        <a href="https://github.com/RIXIYACATHRINE/Online-quiz" 
+            class="inline-block mt-2 text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition" 
+            target="_blank">View Code
+        </a>
+    </div>
+
+
+        <!-- Dynamic Card Showcase -->
+        <div class="bg-white text-black rounded-xl shadow-lg p-6 hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-semibold mb-2">Dynamic Card Showcase for Tech Event</h3>
+            <p class="text-base mb-4">Single-page responsive site using HTML & CSS with animated flip cards to promote a technical event attractively.</p>
+            <a href="https://rixiyacathrine.github.io/Dynamic-Card-Showcase/" 
+               class="inline-block mt-2 text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition" 
+               target="_blank">View Demo</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+ <!-- Internship Section -->
+    <section id="internships" class="p-10 text-center">
+        <h2 class="text-4xl font-bold mb-6">Internships</h2>
+        <div class="max-w-2xl mx-auto text-lg space-y-4">
+            <p class="bg-white text-black p-4 rounded-lg shadow-lg">
+                🏢 <b>Tap Academy Private Limited, Bengaluru</b> – Feb 2025 – July 2025 
+                <br> 
+                Participated in full-stack training and developed multiple hands-on projects.
             </p>
             <p class="bg-white text-black p-4 rounded-lg shadow-lg">
-                📌 <b>Smart Parking Management System</b> - An IoT-based project aimed at optimizing urban parking efficiency.
+                🏢 <b>Dalmia Bharat Limited, Trichy</b> – June 2023 – July 2023  
+                <br>
+                Worked on industrial projects and technical process understanding.
+            </p>
+            <p class="bg-white text-black p-4 rounded-lg shadow-lg">
+                🏢 <b>Bharat Heavy Electricals Limited, Trichy</b> – July 2024 – Aug 2024  
+                <br>
+                Gained exposure to embedded systems and automation technology.
             </p>
         </div>
     </section>
 
-    <!-- Internship Section -->
-    <section id="internships" class="p-10 text-center">
-        <h2 class="text-4xl font-bold mb-6">Internships</h2>
-        <div class="max-w-2xl mx-auto text-lg">
-            <p class="bg-white text-black p-4 rounded-lg shadow-lg mb-4">
-                🏢 <b>Dalmia Bharat Limited</b> - Worked on industrial projects & technical processes.
-            </p>
-            <p class="bg-white text-black p-4 rounded-lg shadow-lg">
-                🏢 <b>Bharat Heavy Electricals Limited, Trichy</b> - Gained experience in embedded systems & core of electrical automation.
-            </p>
-        </div>
-    </section>
 
     <!-- Contact Me Section -->
     <section id="contact" class="p-10 bg-black text-white text-center">
