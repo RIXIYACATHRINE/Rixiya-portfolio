@@ -1,3 +1,88 @@
+/* === Animations === */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fade-in 1.5s ease-out;
+}
+
+.fade-in {
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* === Buttons === */
+.btn {
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    box-shadow: 0px 5px 15px rgba(255, 255, 0, 0.5);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(255, 255, 0, 0.8);
+}
+
+/* === Navigation Buttons === */
+.nav-btn {
+    padding: 10px 16px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.nav-btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* === Contact Form Inputs === */
+.contact-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-input:focus {
+    outline: none;
+    border-color: #ff0;
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+}
+
+/* === Section Utility === */
+.section {
+    padding: 100px 10px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === Footer === */
+footer {
+    font-size: 16px;
+    background-color: #1f2937; /* gray-800 for consistency */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
 @keyframes fade-in {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
